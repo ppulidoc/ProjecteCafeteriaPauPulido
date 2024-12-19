@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProjecteCafeteriaPauPulido"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityHome"
+            android:exported="false" />
+        <activity
             android:name=".ActivityLogin"
             android:exported="true">
             <intent-filter>
