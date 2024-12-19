@@ -13,10 +13,14 @@
         android:theme="@style/Theme.ProjecteCafeteriaPauPulido"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityRegister"
+            android:exported="false" />
+        <activity
             android:name=".ActivityHome"
             android:exported="false" />
         <activity
             android:name=".ActivityLogin"
+            android:theme="@style/Base.Theme.ProjecteCafeteriaPauPulido"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
