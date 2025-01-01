@@ -10,7 +10,7 @@
     tools:context=".BegudesFragment">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textTitle"
             android:layout_width="183dp"
             android:layout_height="42dp"
             android:layout_marginTop="104dp"
@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textCafeLlet"
             android:layout_width="153dp"
             android:layout_height="35dp"
             android:layout_marginTop="240dp"
@@ -35,26 +35,77 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/quantCafe"
+            android:id="@+id/quantCafeLlet"
             android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="60dp"
             android:layout_marginTop="92dp"
             android:ems="10"
             android:hint="Quantitat"
             android:inputType="text"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintStart_toEndOf="@+id/textCafeLlet"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+        <TextView
+            android:id="@+id/textXoco"
+            android:layout_width="153dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="316dp"
+            android:text="Xocolata desfeta"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/quantXoco"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="164dp"
+            android:ems="10"
+            android:hint="Quantitat"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/textCafeLlet"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+        <TextView
+            android:id="@+id/textSuc"
+            android:layout_width="153dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="384dp"
+            android:text="Suc de taronja"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/quantSuc"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="236dp"
+            android:ems="10"
+            android:hint="Quantitat"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/textCafeLlet"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="52dp"
             android:text="Seguent ->"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.561"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/textSuc" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
