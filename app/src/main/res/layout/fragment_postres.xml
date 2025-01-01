@@ -21,25 +21,39 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/textTrufas"
             android:layout_width="153dp"
             android:layout_height="35dp"
-            android:layout_marginTop="240dp"
+            android:layout_marginTop="248dp"
             android:text="Trufes"
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintHorizontal_bias="0.131"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/preuTrufa"
+            android:layout_width="48dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="100dp"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.721"
+            app:layout_constraintStart_toEndOf="@+id/textTrufas"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
         <EditText
             android:id="@+id/quantTrufas"
             android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
             android:ems="10"
             android:hint="Quantitat"
             android:inputType="text"
@@ -50,27 +64,40 @@
             android:id="@+id/textFlam"
             android:layout_width="153dp"
             android:layout_height="35dp"
-            android:layout_marginTop="316dp"
+            android:layout_marginTop="320dp"
             android:text="Flam"
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintHorizontal_bias="0.131"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/preuFlam"
+            android:layout_width="48dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="172dp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.721"
+            app:layout_constraintStart_toEndOf="@+id/textFlam"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
         <EditText
             android:id="@+id/quantFlam"
             android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="164dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="172dp"
             android:ems="10"
             android:hint="Quantitat"
             android:inputType="text"
             app:layout_constraintStart_toEndOf="@+id/textTrufas"
             app:layout_constraintTop_toBottomOf="@+id/textTitle" />
-
 
         <Button
             android:id="@+id/button2"

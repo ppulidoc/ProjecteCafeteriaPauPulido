@@ -30,15 +30,28 @@
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintHorizontal_bias="0.143"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/preuCafe"
+            android:layout_width="48dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="92dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.739"
+            app:layout_constraintStart_toEndOf="@+id/textCafeLlet"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
         <EditText
             android:id="@+id/quantCafeLlet"
             android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="92dp"
             android:ems="10"
             android:hint="Quantitat"
@@ -50,20 +63,33 @@
             android:id="@+id/textXoco"
             android:layout_width="153dp"
             android:layout_height="35dp"
-            android:layout_marginTop="316dp"
+            android:layout_marginTop="312dp"
             android:text="Xocolata desfeta"
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintHorizontal_bias="0.143"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/preuXoco"
+            android:layout_width="48dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="168dp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.739"
+            app:layout_constraintStart_toEndOf="@+id/textXoco"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
         <EditText
             android:id="@+id/quantXoco"
             android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="164dp"
             android:ems="10"
             android:hint="Quantitat"
@@ -75,21 +101,34 @@
             android:id="@+id/textSuc"
             android:layout_width="153dp"
             android:layout_height="35dp"
-            android:layout_marginTop="384dp"
+            android:layout_marginTop="372dp"
             android:text="Suc de taronja"
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintHorizontal_bias="0.143"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/preuSuc"
+            android:layout_width="48dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="224dp"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.739"
+            app:layout_constraintStart_toEndOf="@+id/textSuc"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 
         <EditText
             android:id="@+id/quantSuc"
             android:layout_width="100dp"
             android:layout_height="38dp"
-            android:layout_marginStart="64dp"
-            android:layout_marginTop="236dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="224dp"
             android:ems="10"
             android:hint="Quantitat"
             android:inputType="text"
