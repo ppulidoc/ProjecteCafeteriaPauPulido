@@ -10,15 +10,51 @@
     tools:context=".BegudesFragment">
 
         <TextView
+            android:id="@+id/textView4"
             android:layout_width="183dp"
             android:layout_height="42dp"
             android:layout_marginTop="104dp"
-            android:text="MENJAR"
+            android:text="BEGUDES"
             android:textAlignment="center"
             android:textSize="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="153dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="240dp"
+            android:text="Cafe amb llet"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/quantCafe"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="92dp"
+            android:ems="10"
+            android:hint="Quantitat"
+            android:inputType="text"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:text="Seguent ->"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
