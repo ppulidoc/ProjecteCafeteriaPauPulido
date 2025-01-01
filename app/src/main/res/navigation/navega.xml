@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_menjars" >
         <action
             android:id="@+id/action_menjarsFragment_to_begudesFragment"
-            app:destination="@id/begudesFragment" />
+            app:destination="@id/begudesFragment"
+            app:popUpTo="@id/menjarsFragment" />
     </fragment>
     <fragment
         android:id="@+id/begudesFragment"
@@ -21,7 +22,8 @@
         tools:layout="@layout/fragment_begudes" >
         <action
             android:id="@+id/action_begudesFragment_to_postresFragment"
-            app:destination="@id/postresFragment" />
+            app:destination="@id/postresFragment"
+            app:popUpTo="@id/begudesFragment" />
     </fragment>
     <fragment
         android:id="@+id/postresFragment"
@@ -30,7 +32,8 @@
         tools:layout="@layout/fragment_postres" >
         <action
             android:id="@+id/action_postresFragment_to_pagamentFragment"
-            app:destination="@id/pagamentFragment" />
+            app:destination="@id/pagamentFragment"
+            app:popUpTo="@id/postresFragment" />
     </fragment>
     <fragment
         android:id="@+id/pagamentFragment"
