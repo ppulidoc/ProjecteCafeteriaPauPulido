@@ -51,9 +51,10 @@ class PostresViewModel: ViewModel() {
         _flamT.value = totalFlams
     }
 
-    fun totalPostres() {
+    fun totalPostres(): Int {
         val sumaTotal = (_trufesT.value ?: 0) + (flamT.value ?: 0)
         _postres.value = sumaTotal
+        return sumaTotal
 
     }
 

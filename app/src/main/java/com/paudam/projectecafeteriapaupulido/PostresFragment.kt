@@ -16,6 +16,7 @@ import com.paudam.projectecafeteriapaupulido.databinding.FragmentPostresBinding
 
 class PostresFragment : Fragment() {
     private val postresViewModel: PostresViewModel by activityViewModels()
+    private val globalViewModel: GlobalViewModel by activityViewModels()
     private lateinit var binding: FragmentPostresBinding
 
     override fun onCreateView(
@@ -47,12 +48,8 @@ class PostresFragment : Fragment() {
             }
 
 
-            postresViewModel.totalPostres()
-
-            val mensaje = postresViewModel.postres.value?.toString() ?: "No hay valor"
-            val duracion = Toast.LENGTH_SHORT
-            val toast = Toast.makeText(requireContext(), mensaje, duracion)
-            toast.show()
+            val totalPostres = postresViewModel.totalPostres()
+            globalViewModel.obtainPostres(totalPostres)
 
 
             findNavController().navigate(

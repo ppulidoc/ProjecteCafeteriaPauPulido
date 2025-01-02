@@ -13,6 +13,7 @@ import com.paudam.projectecafeteriapaupulido.databinding.FragmentBegudesBinding
 
 class BegudesFragment : Fragment() {
     private val begudesViewModel: BegudesViewModel by activityViewModels()
+    private val globalViewModel: GlobalViewModel by activityViewModels()
     private lateinit var binding: FragmentBegudesBinding
 
     override fun onCreateView(
@@ -54,14 +55,8 @@ class BegudesFragment : Fragment() {
                 begudesViewModel.updateSuc( quantSInt, preuSInt)
             }
 
-
-            begudesViewModel.totalBegudes()
-
-            val mensaje = begudesViewModel.begudes.value?.toString() ?: "No hay valor"
-            val duracion = Toast.LENGTH_SHORT
-            val toast = Toast.makeText(requireContext(), mensaje, duracion)
-            toast.show()
-
+            val totalBegudes = begudesViewModel.totalBegudes()
+            globalViewModel.obtainBegudes(totalBegudes)
 
 
             findNavController().navigate(

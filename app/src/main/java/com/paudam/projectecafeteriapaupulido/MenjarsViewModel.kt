@@ -72,10 +72,10 @@ class MenjarsViewModel: ViewModel() {
     }
 
 
-    fun totalMenjars() {
+    fun totalMenjars(): Int {
         val sumaTotal = (_magdalenasT.value ?: 0) + (_croissantT.value ?: 0) + (_entrepaT.value ?: 0)
         _menjars.value = sumaTotal
-
+        return sumaTotal
     }
 
 

@@ -73,9 +73,10 @@ class BegudesViewModel: ViewModel() {
     }
 
 
-    fun totalBegudes() {
+    fun totalBegudes(): Int {
         val sumaTotal = (_cafeT.value ?: 0) + (_sucT.value ?: 0) + (_xocoT.value ?: 0)
         _begudes.value = sumaTotal
+        return sumaTotal
 
     }
 

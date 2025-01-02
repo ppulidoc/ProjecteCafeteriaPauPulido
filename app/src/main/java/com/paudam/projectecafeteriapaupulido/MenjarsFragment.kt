@@ -5,9 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.paudam.projectecafeteriapaupulido.databinding.FragmentMenjarsBinding
@@ -15,6 +13,7 @@ import com.paudam.projectecafeteriapaupulido.databinding.FragmentMenjarsBinding
 
 class MenjarsFragment : Fragment() {
     private val menjarsViewModel: MenjarsViewModel by activityViewModels()
+    private val globalViewModel: GlobalViewModel by activityViewModels()
     private lateinit var binding: FragmentMenjarsBinding
 
     override fun onCreateView(
@@ -54,13 +53,12 @@ class MenjarsFragment : Fragment() {
             if (quantEInt != null && preuEInt != null ) {
                 menjarsViewModel.updateEntrepa(quantEInt, preuEInt)
             }
-            menjarsViewModel.totalMenjars()
 
-            val mensaje = menjarsViewModel.menjars.value?.toString() ?: "No hay valor"
-            val duracion = Toast.LENGTH_SHORT
-            val toast = Toast.makeText(requireContext(), mensaje, duracion)
-            toast.show()
+            // Obtener el valor total de los menjars
+            val totalMenjar = menjarsViewModel.totalMenjars()
 
+            // Pasar el valor a GlobalViewModel
+            globalViewModel.obtainMenjar(totalMenjar)
 
 
             findNavController().navigate(
