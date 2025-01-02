@@ -10,9 +10,10 @@
         tools:context=".PagamentFragment">
 
         <TextView
+            android:id="@+id/titleText"
             android:layout_width="183dp"
             android:layout_height="42dp"
-            android:layout_marginTop="104dp"
+            android:layout_marginTop="56dp"
             android:text="PAGAMENT"
             android:textAlignment="center"
             android:textSize="32dp"
@@ -20,9 +21,389 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="183dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="52dp"
+            android:text="Total a pagar --> "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
+        <TextView
+            android:id="@+id/textResTotal"
+            android:layout_width="86dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="52dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toEndOf="@+id/textTotal"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
+        <TextView
+            android:layout_width="71dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/textTotal"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
+        <TextView
+            android:id="@+id/textProductesMenjar"
+            android:layout_width="162dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="112dp"
+            android:text="Menjar"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <TextView
+            android:id="@+id/textMag"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Magdalenas --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:id="@+id/textMagPreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textMag"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textMagPreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:id="@+id/textCroiss"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="48dp"
+            android:text="Croissants --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:id="@+id/textCroissPreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="48dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textMag"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="48dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textCroissPreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:id="@+id/textEntrepa"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="88dp"
+            android:text="Entrepans --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:id="@+id/textEntPreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="88dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textMag"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="88dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textCroissPreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesMenjar" />
+
+        <TextView
+            android:id="@+id/textProductesBeguda"
+            android:layout_width="162dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="280dp"
+            android:text="Begudes"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <TextView
+            android:id="@+id/textCafe"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Café --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:id="@+id/textCafePreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textCafe"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textCafePreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:id="@+id/textXoco"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="48dp"
+            android:text="Xocolate --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:id="@+id/textXocoPreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="48dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textXoco"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="48dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textXocoPreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:id="@+id/textZumo"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="88dp"
+            android:text="Zumo --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:id="@+id/textZumoPreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="88dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textZumo"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="88dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textZumoPreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesBeguda" />
+
+        <TextView
+            android:id="@+id/textProductesPostres"
+            android:layout_width="162dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="444dp"
+            android:text="Postres"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <TextView
+            android:id="@+id/textTrufes"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8dp"
+            android:text="Trufes --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesPostres" />
+
+        <TextView
+            android:id="@+id/textTrufesPreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textTrufes"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesPostres" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textTrufesPreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesPostres" />
+
+        <TextView
+            android:id="@+id/textFlam"
+            android:layout_width="111dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="48dp"
+            android:text="Flam --> "
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.196"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesPostres" />
+
+        <TextView
+            android:id="@+id/textFlamPreu"
+            android:layout_width="87dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="48dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toEndOf="@+id/textFlam"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesPostres" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="48dp"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textFlamPreu"
+            app:layout_constraintTop_toBottomOf="@+id/textProductesPostres" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
