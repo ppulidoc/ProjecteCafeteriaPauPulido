@@ -5,13 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.findNavController
 import com.paudam.projectecafeteriapaupulido.databinding.FragmentBegudesBinding
-import com.paudam.projectecafeteriapaupulido.databinding.FragmentMenjarsBinding
 
 class BegudesFragment : Fragment() {
-
+    private val begudesViewModel: BegudesViewModel by activityViewModels()
     private lateinit var binding: FragmentBegudesBinding
 
     override fun onCreateView(
@@ -23,6 +24,46 @@ class BegudesFragment : Fragment() {
         binding = FragmentBegudesBinding.inflate(inflater)
 
         binding.button2.setOnClickListener {
+
+            val quantitatC = binding.quantCafeLlet.text.toString()
+            val preuC = binding.preuCafe.text.toString()
+            val quantCInt = quantitatC.toIntOrNull()
+            val preuCInt = preuC.toIntOrNull()
+
+            if (quantCInt != null && preuCInt != null ) {
+                begudesViewModel.updateCafe(quantCInt, preuCInt)
+            }
+
+
+            val quantitatX = binding.quantXoco.text.toString()
+            val preuX = binding.preuXoco.text.toString()
+            val quantXInt = quantitatX.toIntOrNull()
+            val preuXInt = preuX.toIntOrNull()
+
+            if (quantXInt != null && preuXInt != null ) {
+                begudesViewModel.updateXoco(quantXInt, preuXInt)
+            }
+
+
+            val quantitatS = binding.quantSuc.text.toString()
+            val preuS = binding.preuSuc.text.toString()
+            val quantSInt = quantitatS.toIntOrNull()
+            val preuSInt = preuS.toIntOrNull()
+
+            if (quantSInt != null && preuSInt != null ) {
+                begudesViewModel.updateSuc( quantSInt, preuSInt)
+            }
+
+
+            begudesViewModel.totalBegudes()
+
+            val mensaje = begudesViewModel.begudes.value?.toString() ?: "No hay valor"
+            val duracion = Toast.LENGTH_SHORT
+            val toast = Toast.makeText(requireContext(), mensaje, duracion)
+            toast.show()
+
+
+
             findNavController().navigate(
                 R.id.action_begudesFragment_to_postresFragment,
                 null)
