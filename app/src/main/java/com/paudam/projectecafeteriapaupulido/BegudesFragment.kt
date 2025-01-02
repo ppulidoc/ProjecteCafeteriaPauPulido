@@ -33,6 +33,7 @@ class BegudesFragment : Fragment() {
 
             if (quantCInt != null && preuCInt != null ) {
                 begudesViewModel.updateCafe(quantCInt, preuCInt)
+                globalViewModel.obtainCafePreuTotal(begudesViewModel.updateCafe(quantCInt,preuCInt))
             }
 
 
@@ -43,6 +44,7 @@ class BegudesFragment : Fragment() {
 
             if (quantXInt != null && preuXInt != null ) {
                 begudesViewModel.updateXoco(quantXInt, preuXInt)
+                globalViewModel.obtainXocoPreuTotal(begudesViewModel.updateXoco(quantXInt,preuXInt))
             }
 
 
@@ -53,6 +55,7 @@ class BegudesFragment : Fragment() {
 
             if (quantSInt != null && preuSInt != null ) {
                 begudesViewModel.updateSuc( quantSInt, preuSInt)
+                globalViewModel.obtainSucPreuTotal(begudesViewModel.updateSuc(quantSInt,preuSInt))
             }
 
             val totalBegudes = begudesViewModel.totalBegudes()

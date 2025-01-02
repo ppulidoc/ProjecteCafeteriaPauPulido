@@ -35,6 +35,7 @@ class PostresFragment : Fragment() {
 
             if (quantTInt != null && preuTInt != null ) {
                 postresViewModel.updateTrufes(quantTInt, preuTInt)
+                globalViewModel.obtainTrufesPreuTotal(postresViewModel.updateTrufes(quantTInt,preuTInt))
             }
 
 
@@ -45,6 +46,7 @@ class PostresFragment : Fragment() {
 
             if (quantFInt != null && preuFInt != null ) {
                 postresViewModel.updateFlam(quantFInt, preuFInt)
+                globalViewModel.obtainFlamPreuTotal(postresViewModel.updateFlam(quantFInt,preuFInt))
             }
 
 

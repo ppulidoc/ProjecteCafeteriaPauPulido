@@ -22,11 +22,12 @@ class MenjarsViewModel: ViewModel() {
     private val _magdalenasT = MutableLiveData<Int>()
     val magdalenasT: LiveData<Int> get() = _magdalenasT
 
-    fun updateMadalenas(quant: Int, preu: Int) {
+    fun updateMadalenas(quant: Int, preu: Int):Int {
         _magdalenasQ.value = quant
         _magdalenasP.value = preu
         val totalMagdalenas = (_magdalenasQ.value ?: 0) * (_magdalenasP.value ?: 0)
         _magdalenasT.value = totalMagdalenas
+        return totalMagdalenas
     }
 
 
@@ -43,11 +44,12 @@ class MenjarsViewModel: ViewModel() {
     private val _croissantT = MutableLiveData<Int>()
     val croissantT: LiveData<Int> get() = _croissantT
 
-    fun updateCroissants(quant: Int, preu: Int) {
+    fun updateCroissants(quant: Int, preu: Int): Int {
         _croissantQ.value = quant
         _croissantP.value = preu
         val totalCroissant = (_croissantQ.value ?: 0) * (_croissantP.value ?: 0)
         _croissantT.value = totalCroissant
+        return totalCroissant
     }
 
 
@@ -64,11 +66,12 @@ class MenjarsViewModel: ViewModel() {
     private val _entrepaT = MutableLiveData<Int>()
     val entrepaT: LiveData<Int> get() = _entrepaT
 
-    fun updateEntrepa(quant: Int, preu: Int) {
+    fun updateEntrepa(quant: Int, preu: Int): Int {
         _entrepaQ.value = quant
         _entrepaP.value = preu
         val totalEntrepa = (_entrepaQ.value ?: 0) * (_entrepaP.value ?: 0)
         _entrepaT.value = totalEntrepa
+        return totalEntrepa
     }
 
 

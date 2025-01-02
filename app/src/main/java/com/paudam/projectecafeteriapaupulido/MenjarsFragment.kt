@@ -32,6 +32,7 @@ class MenjarsFragment : Fragment() {
 
             if (quantMInt != null && preuMInt != null ) {
                 menjarsViewModel.updateMadalenas(quantMInt, preuMInt)
+                globalViewModel.obtainMagPreuTotal(menjarsViewModel.updateMadalenas(quantMInt,preuMInt))
             }
 
 
@@ -42,6 +43,7 @@ class MenjarsFragment : Fragment() {
 
             if (quantCInt != null && preuCInt != null ) {
                 menjarsViewModel.updateCroissants(quantCInt, preuCInt)
+                globalViewModel.obtainCroisPreuTotal(menjarsViewModel.updateCroissants(quantCInt,preuCInt))
             }
 
 
@@ -52,6 +54,7 @@ class MenjarsFragment : Fragment() {
 
             if (quantEInt != null && preuEInt != null ) {
                 menjarsViewModel.updateEntrepa(quantEInt, preuEInt)
+                globalViewModel.obtainEPreuTotal(menjarsViewModel.updateMadalenas(quantEInt,preuEInt))
             }
 
             // Obtener el valor total de los menjars

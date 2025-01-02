@@ -23,11 +23,12 @@ class PostresViewModel: ViewModel() {
     private val _trufesT = MutableLiveData<Int>()
     val trufesT: LiveData<Int> get() = _trufesT
 
-    fun updateTrufes(quant: Int, preu: Int) {
+    fun updateTrufes(quant: Int, preu: Int): Int{
         _trufesQ.value = quant
         _trufesP.value = preu
         val totalTrufes = (_trufesQ.value ?: 0) * (_trufesP.value ?: 0)
         _trufesT.value = totalTrufes
+        return totalTrufes
     }
 
     //Flam
@@ -44,11 +45,12 @@ class PostresViewModel: ViewModel() {
     private val _flamT = MutableLiveData<Int>()
     val flamT: LiveData<Int> get() = _flamT
 
-    fun updateFlam(quant: Int, preu: Int) {
+    fun updateFlam(quant: Int, preu: Int):Int {
         _flamQ.value = quant
         _flamP.value = preu
         val totalFlams = (_flamQ.value ?: 0) * (_flamP.value ?: 0)
         _flamT.value = totalFlams
+        return totalFlams
     }
 
     fun totalPostres(): Int {

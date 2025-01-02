@@ -23,11 +23,12 @@ class BegudesViewModel: ViewModel() {
     private val _cafeT = MutableLiveData<Int>()
     val cafeT: LiveData<Int> get() = _cafeT
 
-    fun updateCafe(quant: Int, preu: Int) {
+    fun updateCafe(quant: Int, preu: Int): Int {
         _cafeQ.value = quant
         _cafeP.value = preu
         val totalCafe = (_cafeQ.value ?: 0) * (_cafeP.value ?: 0)
         _cafeT.value = totalCafe
+        return totalCafe
     }
 
 
@@ -44,11 +45,12 @@ class BegudesViewModel: ViewModel() {
     private val _sucT = MutableLiveData<Int>()
     val sucT: LiveData<Int> get() = _sucT
 
-    fun updateSuc(quant: Int, preu: Int) {
+    fun updateSuc(quant: Int, preu: Int): Int {
         _sucQ.value = quant
         _sucP.value = preu
         val totalSuc= (_sucQ.value ?: 0) * (_sucP.value ?: 0)
         _sucT.value = totalSuc
+        return totalSuc
     }
 
 
@@ -65,11 +67,12 @@ class BegudesViewModel: ViewModel() {
     private val _xocoT = MutableLiveData<Int>()
     val xocoT: LiveData<Int> get() = _xocoT
 
-    fun updateXoco(quant: Int, preu: Int) {
+    fun updateXoco(quant: Int, preu: Int):Int {
         _xocoQ.value = quant
         _xocoP.value = preu
         val totalXoco = (_xocoQ.value ?: 0) * (_xocoP.value ?: 0)
         _xocoT.value = totalXoco
+        return totalXoco
     }
 
 

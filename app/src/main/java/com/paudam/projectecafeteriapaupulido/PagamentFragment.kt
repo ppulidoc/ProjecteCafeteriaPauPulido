@@ -24,7 +24,19 @@ class PagamentFragment : Fragment() {
 
         binding.textResTotal.text = globalViewModel.obtainPreuFinal().toString()
 
+        //Menjars
+        binding.textMagPreu.text = globalViewModel.pintarPreuMag().toString()
+        binding.textCroissPreu.text = globalViewModel.pintarPreuCrois().toString()
+        binding.textEntPreu.text = globalViewModel.pintarPreuE().toString()
 
+        //Begudes
+        binding.textCafePreu.text = globalViewModel.pintarPreuCafe().toString()
+        binding.textXocoPreu.text = globalViewModel.pintarPreuXoco().toString()
+        binding.textZumoPreu.text = globalViewModel.pintarPreuSuc().toString()
+
+        //Postres
+        binding.textTrufesPreu.text = globalViewModel.pintarPreuTrufes().toString()
+        binding.textFlamPreu.text = globalViewModel.pintarPreuFlam().toString()
 
 
         return binding.root
