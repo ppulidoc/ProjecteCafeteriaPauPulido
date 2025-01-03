@@ -405,6 +405,16 @@
             app:layout_constraintStart_toEndOf="@+id/textFlamPreu"
             app:layout_constraintTop_toBottomOf="@+id/textProductesPostres" />
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            android:text="PAGAR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFlamPreu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

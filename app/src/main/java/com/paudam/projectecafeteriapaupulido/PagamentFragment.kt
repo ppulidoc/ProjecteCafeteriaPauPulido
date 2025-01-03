@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavOptions
+import androidx.navigation.fragment.findNavController
 import com.paudam.projectecafeteriapaupulido.databinding.FragmentBegudesBinding
 import com.paudam.projectecafeteriapaupulido.databinding.FragmentPagamentBinding
 
@@ -38,6 +40,11 @@ class PagamentFragment : Fragment() {
         binding.textTrufesPreu.text = globalViewModel.pintarPreuTrufes().toString()
         binding.textFlamPreu.text = globalViewModel.pintarPreuFlam().toString()
 
+        binding.button2.setOnClickListener(){
+            findNavController().navigate(
+                R.id.action_pagamentFragment_to_pagamentDadesFragment,
+                null)
+        }
 
         return binding.root
 

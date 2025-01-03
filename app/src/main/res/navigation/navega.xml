@@ -39,5 +39,13 @@
         android:id="@+id/pagamentFragment"
         android:name="com.paudam.projectecafeteriapaupulido.PagamentFragment"
         android:label="fragment_pagament"
-        tools:layout="@layout/fragment_pagament" />
+        tools:layout="@layout/fragment_pagament" >
+        <action
+            android:id="@+id/action_pagamentFragment_to_pagamentDadesFragment"
+            app:destination="@id/pagamentDadesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagamentDadesFragment"
+        android:name="com.paudam.projectecafeteriapaupulido.PagamentDadesFragment"
+        android:label="PagamentDadesFragment" />
 </navigation>
