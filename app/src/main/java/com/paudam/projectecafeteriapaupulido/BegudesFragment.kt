@@ -60,6 +60,7 @@ class BegudesFragment : Fragment() {
 
             val totalBegudes = begudesViewModel.totalBegudes()
             globalViewModel.obtainBegudes(totalBegudes)
+            globalViewModel.updateTotal(totalBegudes)
 
 
             findNavController().navigate(

@@ -52,6 +52,8 @@ class PostresFragment : Fragment() {
 
             val totalPostres = postresViewModel.totalPostres()
             globalViewModel.obtainPostres(totalPostres)
+            globalViewModel.updateTotal(totalPostres)
+
 
 
             findNavController().navigate(

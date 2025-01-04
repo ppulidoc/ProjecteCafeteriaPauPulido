@@ -54,14 +54,17 @@ class MenjarsFragment : Fragment() {
 
             if (quantEInt != null && preuEInt != null ) {
                 menjarsViewModel.updateEntrepa(quantEInt, preuEInt)
-                globalViewModel.obtainEPreuTotal(menjarsViewModel.updateMadalenas(quantEInt,preuEInt))
+                    globalViewModel.obtainEPreuTotal(menjarsViewModel.updateEntrepa(quantEInt,preuEInt))
             }
 
             // Obtener el valor total de los menjars
             val totalMenjar = menjarsViewModel.totalMenjars()
 
+
             // Pasar el valor a GlobalViewModel
             globalViewModel.obtainMenjar(totalMenjar)
+
+            globalViewModel.updateTotal(totalMenjar)
 
 
             findNavController().navigate(

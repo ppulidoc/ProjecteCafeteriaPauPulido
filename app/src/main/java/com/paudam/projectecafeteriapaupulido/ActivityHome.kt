@@ -24,5 +24,11 @@ class ActivityHome : AppCompatActivity() {
 
         setupWithNavController(binding.bottomNavigationView, navController)
 
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.my_liveDataFragmentContainer, LiveDataFragment())
+                .commit()
+        }
+
     }
 }

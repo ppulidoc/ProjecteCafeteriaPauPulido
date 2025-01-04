@@ -143,13 +143,25 @@ class GlobalViewModel: ViewModel() {
     }
 
 
-
     //Otras funciones
     fun obtainPreuFinal(): Int {
         val total = (_menjars.value ?: 0) + (_begudes.value ?: 0) + (_postres.value ?: 0)
         _total.value = total
         return total
     }
+
+
+    // Función para actualizar el total
+    fun updateTotal(newTotal: Int) {
+        _total.value = (_total.value ?: 0) + (newTotal)
+    }
+
+    // Función para obtener el total actual
+    fun getTotal(): Int {
+        return _total.value ?: 0
+    }
+
+
 
 
 }
