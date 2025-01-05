@@ -57,7 +57,10 @@ class GlobalViewModel: ViewModel() {
        return preuMagTot
     }
     fun pintarPreuMag(): Int? {
-        val preu = _magdalenas.value
+        var preu = _magdalenas.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
@@ -66,7 +69,10 @@ class GlobalViewModel: ViewModel() {
         return preuCroisTot
     }
     fun pintarPreuCrois(): Int? {
-        val preu = _croissant.value
+        var preu = _croissant.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
@@ -75,7 +81,10 @@ class GlobalViewModel: ViewModel() {
         return preuEntrepaTot
     }
     fun pintarPreuE(): Int? {
-        val preu = _entrepans.value
+        var preu = _entrepans.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
@@ -91,7 +100,10 @@ class GlobalViewModel: ViewModel() {
         return preuCafeTot
     }
     fun pintarPreuCafe(): Int? {
-        val preu = _cafe.value
+        var preu = _cafe.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
@@ -100,7 +112,10 @@ class GlobalViewModel: ViewModel() {
         return preuXocoTot
     }
     fun pintarPreuXoco(): Int? {
-        val preu = _xoco.value
+        var preu = _xoco.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
@@ -109,7 +124,10 @@ class GlobalViewModel: ViewModel() {
         return preuSucTot
     }
     fun pintarPreuSuc(): Int? {
-        val preu = _suc.value
+        var preu = _suc.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
@@ -125,7 +143,10 @@ class GlobalViewModel: ViewModel() {
         return preuTrufesTot
     }
     fun pintarPreuTrufes(): Int? {
-        val preu = _trufes.value
+        var preu = _trufes.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
@@ -134,7 +155,10 @@ class GlobalViewModel: ViewModel() {
         return preuFlamTot
     }
     fun pintarPreuFlam(): Int? {
-        val preu = _flam.value
+        var preu = _flam.value
+        if (preu == null){
+            preu = 0
+        }
         return preu
     }
 
